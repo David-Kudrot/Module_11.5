@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% comment %}
+  adding card here
+{% endcomment %}
+
+
+<div class="row gap-2 d-flex flex-row justify-content-evenly mt-4 custom-card">
+    {% for meal in meals %}
+
+        <div class="card col-lg-3 col-md-3 col-sm-12" style="width: 17rem;">
+            <img src="{{ meal.strMealThumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> {{ meal.strMeal }} </h5>
+                <p class="card-text">Taste the freshness! We source the finest ingredients, supporting local farms and ensuring top-notch quality.</p>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock content %}

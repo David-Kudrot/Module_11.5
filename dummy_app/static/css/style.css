@@ -1,0 +1,11 @@
+body{
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+@media screen and (max-width:576){
+    .custom-card{
+        justify-content: center;
+    }
+}
